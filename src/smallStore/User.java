@@ -6,6 +6,8 @@
 
 package smallStore;
 
+import java.util.Arrays;
+
 public abstract class User {
     private String name;
     private String phone;
@@ -31,8 +33,13 @@ public abstract class User {
         phone = zeroEightZero;
     }
 
-    public void setHomeAddress(Address hAddress) {
-        homeAddress = hAddress;
+    public void setHomeAddress(String hAddress) {
+        homeAddress = new Address();
+        String[] splitAddress = hAddress.split("\\s");
+        homeAddress.setHouseNumber(splitAddress[0]);
+        homeAddress.setCityName(splitAddress[1]);
+        homeAddress.setStateName(splitAddress[splitAddress.length-2]);
+        homeAddress.setCountryName(splitAddress[splitAddress.length-1]);
     }
 
     public void setEmailAddress(String eAddress) {

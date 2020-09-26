@@ -7,17 +7,18 @@
 package smallStore;
 
 public class Address {
-    private String houseNumber;
-    private String cityName;
-    private String stateName;
-    private String countryName;
+    private static String houseNumber;
+    private static String cityName;
+    private static String stateName;
+    private static String countryName;
+
 
     public String getHouseNumber() {
         return houseNumber;
     }
 
     public void setHouseNumber(String houseNumber) {
-        this.houseNumber = houseNumber;
+        Address.houseNumber = houseNumber;
     }
 
     public String getCityName() {
@@ -25,7 +26,7 @@ public class Address {
     }
 
     public void setCityName(String cityName) {
-        this.cityName = cityName;
+        Address.cityName = cityName;
     }
 
     public String getStateName() {
@@ -33,7 +34,7 @@ public class Address {
     }
 
     public void setStateName(String stateName) {
-        this.stateName = stateName;
+        Address.stateName = stateName;
     }
 
     public String getCountryName() {
@@ -41,7 +42,7 @@ public class Address {
     }
 
     public void setCountryName(String countryName) {
-        this.countryName = countryName;
+        Address.countryName = countryName;
     }
 
     @Override
