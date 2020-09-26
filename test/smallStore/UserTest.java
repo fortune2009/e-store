@@ -11,13 +11,13 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
+//import java.util.Arrays;
 import java.util.logging.Logger;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class UserTest {
-    private Logger logger = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+    private final Logger logger = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
     @BeforeEach
     void alwaysStartWithThis() {
     }
@@ -49,7 +49,7 @@ class UserTest {
                 .getRegisteredUsers()
                 .contains(newUser));
 
-        store.getRegisteredUsers().forEach(user -> {System.out.println(user.toString());});
+        store.getRegisteredUsers().forEach(user -> System.out.println(user.toString()));
 
         assertEquals(newUser.getName(), "bisi");
 
@@ -63,6 +63,7 @@ class UserTest {
                 System.out.println("Jumps like monkey");
             }
         };
+        assertNotNull(david);
     }
 
 
