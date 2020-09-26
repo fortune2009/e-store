@@ -6,6 +6,6 @@
 
 package smallStore;
 
-public class Inventories {
+public class Inventory {
 
 }

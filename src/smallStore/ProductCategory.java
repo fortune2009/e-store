@@ -6,7 +6,7 @@
 
 package smallStore;
 
-public enum ProductType {
+public enum ProductCategory {
      GROCERIES, KITCHEN_UTENSILS, SANITARY_PRODUCTS, MISCELLANEOUS_GOODS, CONTAINERS, WRAPPING,
             DYESTUFFS, PUBLIC_HYGIENE_PRODUCTS, PEST_CONTROL;
 
