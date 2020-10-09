@@ -83,5 +83,9 @@ class UserTest {
         assertNotNull(obi);
     }
 
-
+    @Test
+    @DisplayName("Receipt test")
+    void receiptsInWordsTest(){
+        System.out.println();
+    }
 }
