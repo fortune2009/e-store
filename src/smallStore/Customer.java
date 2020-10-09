@@ -11,9 +11,9 @@ import java.util.List;
 
 public class Customer extends User {
 
-    private BillingInformation billingInformation;
+    private List<BillingInformation> billingInformation;
     private CreditCardInformation creditCardDetails;
-    private List<Cart> cart= new LinkedList<>();
+    private Cart customerCart;
 
 
     @Override

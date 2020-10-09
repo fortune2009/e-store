@@ -6,13 +6,11 @@
 
 package smallStore;
 
-import java.math.BigDecimal;
-import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Cart {
-    private Item item;
+    private List<Item> item;
     private Price price;
     private Quantity quantity;
     private List<Price> totalPrice = new ArrayList<>();
@@ -35,11 +33,11 @@ public class Cart {
         this.quantity = quantity;
     }
 
-    public Item getItem() {
+    public List<Item> getItem() {
         return item;
     }
 
-    public void setItem(Item item) {
+    public void setItem(List<Item> item) {
         this.item = item;
     }
 

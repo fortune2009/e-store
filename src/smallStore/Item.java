@@ -6,41 +6,33 @@
 
 package smallStore;
 
+import java.math.BigDecimal;
+
 public class Item {
-    private String productId;
-    private String productName;
-    private ProductType productCategory;
+    private int quantityOfProductSelected;
+    private Product product;
 
-    public String getProductId() {
-        return productId;
+    public int getQuantityOfProductSelected() {
+        return quantityOfProductSelected;
     }
 
-    public void setProductId(String productId) {
-        this.productId = productId;
+    public void setQuantityOfProductSelected(int quantityOfProductSelected) {
+        this.quantityOfProductSelected = quantityOfProductSelected;
     }
 
-    public String getProductName() {
-        return productName;
+    public Product getProduct() {
+        return product;
     }
 
-    public void setProductName(String productName) {
-        this.productName = productName;
-    }
-
-    public ProductType getProductCategory() {
-        return productCategory;
-    }
-
-    public void setProductCategory(ProductType productCategory) {
-        this.productCategory = productCategory;
+    public void setProduct(Product product) {
+        this.product = product;
     }
 
     @Override
     public String toString() {
         final StringBuffer sb = new StringBuffer("Item{");
-        sb.append("productId='").append(productId).append('\'');
-        sb.append(", productName='").append(productName).append('\'');
-        sb.append(", productCategory=").append(productCategory);
+        sb.append("quantityOfProductSelected=").append(quantityOfProductSelected);
+        sb.append(", product=").append(product);
         sb.append('}');
         return sb.toString();
     }
